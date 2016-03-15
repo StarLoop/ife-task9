@@ -1,0 +1,55 @@
+body {
+	font-family: 'Microsoft Yahei Light', sans-serif;
+	margin: 0;
+}
+.icon {background-image: url('../img/icons.png');}
+/* header */
+header {
+	background: #2189bf;
+	color: white;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+header .icon.logo {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin-left: 50px;
+	background-position: 0 0;
+}
+/* header > info */
+header .infobox {
+	display: flex;
+	align-items: center;
+	padding-right: 95px;
+}
+/* header > info > search box */
+header .infobox .searchbox {
+	height: 28px;
+	width: 260px;
+	border-radius: 15px;
+	background-color: white;
+	background-position: -18px 5px;
+}
+header .infobox .searchbox input {
+	height: 28px;
+	width: 210px;
+	outline: none;
+	border: none;
+	margin-left: 38px;
+	position: relative;
+	top: -2px; /* but why? */
+}
+/* header > info > user */
+header .infobox .user {
+	margin-left: 20px;
+}
+header .infobox .user .avatar {
+	width: 18px;
+	height: 18px;
+	background-position: -36px -18px;
+	display: inline-block;
+}
+header .infobox .user span {cursor: pointer;}
