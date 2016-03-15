@@ -1,15 +1,15 @@
+html, body {height: 100%;}
 body {
 	font-family: 'Microsoft Yahei Light', sans-serif;
 	margin: 0;
 }
 .icon {background-image: url('../img/icons.png');}
+*[flex] {display: flex; align-items: center;}
 /* header */
 header {
 	background: #2189bf;
 	color: white;
 	height: 56px;
-	display: flex;
-	align-items: center;
 	justify-content: space-between;
 }
 header .icon.logo {
@@ -21,8 +21,6 @@ header .icon.logo {
 }
 /* header > info */
 header .infobox {
-	display: flex;
-	align-items: center;
 	padding-right: 95px;
 }
 /* header > info > search box */
@@ -53,3 +51,42 @@ header .infobox .user .avatar {
 	display: inline-block;
 }
 header .infobox .user span {cursor: pointer;}
+
+/* aside */
+aside {
+	width: 168px; /* 260px - 46px * 2 */
+	height: calc(100% - 56px - 18px - 18px);
+	background: #2a2e3d;
+	color: #6e8095;
+	float: left;
+	padding: 18px 46px;
+}
+aside .light {color: #ededef;}
+/* aside > info avatar */
+aside .info .avatar {
+	width: 52px;
+	height: 52px;
+	border-radius: 100%;
+	border: 1px solid white;
+	padding: 2px;
+	display: inline-block;
+}
+aside .info .avatar img {
+	width: 48px;
+	height: 48px;
+	border-radius: 100%;
+	background: #b2aaad;
+	margin: 2px;
+}
+/* aside > info name */
+aside .info .name {padding-left: 18px;}
+/* aside > active */
+aside .active {margin: 30px 0 0 18px;}
+aside .active div {transition: 0.1s;}
+aside .active > div:hover {color: #8c949d; text-shadow: 0px 0px 2px #ededef;}
+aside .active div .text {font-size: 16px;}
+aside .active .fav {
+	padding-right: 30px;
+	border-right: 2px solid #313645;
+}
+aside .active .fans {padding-left: 30px;}
