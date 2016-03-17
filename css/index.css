@@ -3,8 +3,8 @@ body {
 	font-family: 'Microsoft Yahei Light', sans-serif;
 	margin: 0;
 }
-.icon {background-image: url('../img/icons.png');}
-*[flex] {display: flex; align-items: center;}
+[data-icon] {background-image: url('../img/icons.png'); display: inline-block;}
+*[data-flex] {display: flex; align-items: center;}
 /* header */
 header {
 	background: #2189bf;
@@ -12,8 +12,7 @@ header {
 	height: 56px;
 	justify-content: space-between;
 }
-header .icon.logo {
-	display: inline-block;
+header [data-icon=logo] {
 	width: 35px;
 	height: 35px;
 	margin-left: 50px;
@@ -44,26 +43,25 @@ header .infobox .searchbox input {
 header .infobox .user {
 	margin-left: 20px;
 }
-header .infobox .user .avatar {
+header .infobox .user [data-icon=avatar] {
 	width: 18px;
 	height: 18px;
 	background-position: -36px -18px;
-	display: inline-block;
 }
 header .infobox .user span {cursor: pointer;}
 
 /* aside */
 aside {
-	width: 168px; /* 260px - 46px * 2 */
-	height: calc(100% - 56px - 18px - 18px);
+	width: 260px;
+	min-height: calc(100% - 56px);
 	background: #2a2e3d;
 	color: #6e8095;
 	float: left;
-	padding: 18px 46px;
 }
 aside .light {color: #ededef;}
 /* aside > info avatar */
-aside .info .avatar {
+aside .user {margin: 18px 46px 0 46px;}
+aside .user .avatar {
 	width: 52px;
 	height: 52px;
 	border-radius: 100%;
@@ -71,7 +69,7 @@ aside .info .avatar {
 	padding: 2px;
 	display: inline-block;
 }
-aside .info .avatar img {
+aside .user .avatar img {
 	width: 48px;
 	height: 48px;
 	border-radius: 100%;
@@ -79,14 +77,42 @@ aside .info .avatar img {
 	margin: 2px;
 }
 /* aside > info name */
-aside .info .name {padding-left: 18px;}
+aside .user .name {padding-left: 18px;}
 /* aside > active */
-aside .active {margin: 30px 0 0 18px;}
-aside .active div {transition: 0.1s;}
-aside .active > div:hover {color: #8c949d; text-shadow: 0px 0px 2px #ededef;}
-aside .active div .text {font-size: 16px;}
-aside .active .fav {
+aside .info {margin: 30px 46px 0 64px;}
+aside .info div {transition: 0.1s;}
+aside .info > div:hover {color: #eee; text-shadow: 0px 0px 2px #ededef;}
+aside .info div .text {font-size: 16px;}
+aside .info .fav {
 	padding-right: 30px;
 	border-right: 2px solid #313645;
 }
-aside .active .fans {padding-left: 30px;}
+aside .info .fans {padding-left: 30px;}
+/* aside > nav */
+aside nav {margin: 24px 0;}
+aside nav [data-icon] {
+	width: 12px;
+	height: 12px;
+	zoom: 1.2;
+	margin-right: 8px;
+}
+aside nav [data-icon=personal-report] {background-position-y: -37px;}
+aside nav [data-icon=folder], aside nav [data-icon=folder-opened] {background-position: -60px -15px;}
+aside nav [data-icon=folder] {opacity: 0.5;}
+aside nav [data-icon=file] {background-position: -30px -37px;}
+aside nav [data-icon=arrow] {background-position-x: -58px;}
+aside nav [data-icon=arrow-down] {background-position: -60px -30px;}
+aside nav [data-icon=star] {background-position: -15px -37px;}
+aside nav [data-icon=share] {background-position: -15px -51px;}
+aside nav [data-icon=accountant-info] {background-position-y: -50px; height: 13px;}
+aside nav .container {
+	padding: 12px 0 0 24px;
+	font-size: 16px;
+}
+aside nav > .container {padding: 12px 0 12px 48px;}
+aside nav > .container > .container > .container {padding-left: 48px;}
+aside nav > .container > .container > .container [data-icon] {margin-right: 0px;}
+aside nav .active {
+	background: #383d4e;
+	padding: 12px 48px;
+}

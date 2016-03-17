@@ -6,32 +6,59 @@
 	<meta charset="utf-8" />
 </head>
 <body>
-	<header flex>
-		<div class="icon logo"></div>
-		<div class="infobox" flex>
+	<header data-flex>
+		<div data-icon="logo"></div>
+		<div class="infobox" data-flex>
 			<div class="icon searchbox"><input type="search" /></div>
 			<div class="user">
-				<div class="icon avatar"></div>
+				<div data-icon="avatar"></div>
 				<span>登录</span>
 			</div>
 		</div>
 	</header>
 	<aside>
-		<div class="info" flex>
+		<div class="user" data-flex>
 			<div class="avatar"><img /></div>
 			<div class="name light">Starloop</div>
 		</div>
-		<div class="active" flex>
-			<div class="fav">
-				<div class="num">314</div>
-				<div class="text">收藏</div>
-			</div>
-			<div class="fans">
-				<div class="num">159</div>
-				<div class="text">粉丝</div>
-			</div>
+		<div class="info" data-flex>
+			<div class="fav"><div class="num">314</div><div class="text">收藏</div></div>
+			<div class="fans"><div class="num">159</div><div class="text">粉丝</div></div>
 		</div>
-		<nav></nav>
+		<nav>
+			<div class="active container">
+				<div data-icon="personal-report"></div>
+				<span class="light">个人报表</span>
+				<div class="container">
+					<div data-icon="arrow"></div>
+					<div data-icon="folder"></div>
+					<span>文件一</span>
+				</div>
+				<div class="container">
+					<div data-icon="arrow-down"></div>
+					<div data-icon="folder-opened"></div>
+					<span class="light">文件二</span>
+					<div class="container">
+						<div data-icon="file"></div>
+						<span class="light">文档1</span>
+					</div>
+					<div class="container">
+						<div data-icon="file"></div>
+						<span>文档1</span>
+					</div>
+				</div>
+				<div class="container">
+					<div data-icon="arrow"></div>
+					<div data-icon="folder"></div>
+					<span>文件三</span>
+				</div>
+			</div>
+			<div class="container"><div data-icon="star"></div><span>个人收藏</span></div>
+			<div class="container"><div data-icon="share"></div><span>我的分享</span></div>
+			<div class="container"><div data-icon="star"></div><span>图库</span></div>
+			<div class="container"><div data-icon="star"></div><span>成长记录</span></div>
+			<div class="container"><div data-icon="accountant-info"></div><span>账户信息</span></div>
+		</nav>
 	</aside>
 	<main></main>
 </body>
