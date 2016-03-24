@@ -1,0 +1,64 @@
+html, body {height: 100%;}
+body {
+	font-family: 'Microsoft Yahei Light', sans-serif;
+	margin: 0;
+	background: #eeeeed;
+}
+[data-icon] {background-image: url('../img/frame.png'); display: inline-block;}
+[data-flex] {display: flex; align-items: center;}
+/* Spec */
+header * {cursor: pointer;}
+header * {transition: 0.1s color text-shadow;}
+header *:hover {color: gray; text-shadow: 0 0 2px ghostwhite;}
+/* Header */
+header {
+	padding: 10px 30px;
+	background: white;
+	font-size: 12px;
+	color: #aaa;
+}
+header * {
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 0.25em 0 0;
+}
+header *:last-child {color: #6898c2;}
+header *:not(:last-child)::after {content: " / "}
+/* Module 1 */
+.module1 {
+	margin: 20px 60px;
+	background: white;
+	border: 1px solid #dddbdd;
+	padding: 14px 30px;
+	align-items: initial;
+	font-size: 14px;
+}
+.module1 > div {
+	display: inline-block;
+	margin-right: 38px;
+	height: 84px;
+}
+.module1 select {
+	border-color: #dfdfdf;
+	margin: 6px 0 0;
+	padding: 6px;
+	font-size: 14px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: url('../img/arrow0.png') no-repeat right;
+	outline: none;
+}
+.module1 div span {color: #aaa; margin: 0 16px;}
+.module1 .query select {width: 100px; background: url('../img/arrow1.png') no-repeat right;}
+.module1 .object select, .module1 .detail select {width: 120px;}
+.module1 .detail select.short {width: 70px;}
+.module1 .detail span.short {margin-right: 12px;}
+.module1 input[type=button] {
+	background: #388ac1;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 1px;
+	padding: 8px 16px;
+	margin: 24px 0px;
+}
