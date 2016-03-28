@@ -4,7 +4,7 @@ body {
 	margin: 0;
 	background: #eeeeed;
 }
-[data-icon] {background-image: url('../img/frame.png'); display: inline-block;}
+[data-icon] {background: url('../img/frame.png') no-repeat; display: inline-block;}
 [data-flex] {display: flex; align-items: center;}
 /* Spec */
 header * {cursor: pointer;}
@@ -24,8 +24,7 @@ header * {
 }
 header *:last-child {color: #6898c2;}
 header *:not(:last-child)::after {content: " / "}
-/* Module 1 */
-.module1 {
+article {
 	margin: 20px 60px;
 	background: white;
 	border: 1px solid #dddbdd;
@@ -33,6 +32,7 @@ header *:not(:last-child)::after {content: " / "}
 	align-items: initial;
 	font-size: 14px;
 }
+/* Module 1 */
 .module1 > div {
 	display: inline-block;
 	margin-right: 38px;
@@ -45,11 +45,12 @@ header *:not(:last-child)::after {content: " / "}
 	font-size: 14px;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-	background: url('../img/arrow0.png') no-repeat right;
+	background: url('../img/frame.png') no-repeat right;
+	background-position: 100px -102px;
 	outline: none;
 }
 .module1 div span {color: #aaa; margin: 0 16px;}
-.module1 .query select {width: 100px; background: url('../img/arrow1.png') no-repeat right;}
+.module1 .query select {width: 100px; background: url('../img/frame.png') no-repeat right; background-position: 80px -73px;}
 .module1 .object select, .module1 .detail select {width: 120px;}
 .module1 .detail select.short {width: 70px;}
 .module1 .detail span.short {margin-right: 12px;}
@@ -61,4 +62,42 @@ header *:not(:last-child)::after {content: " / "}
 	border-radius: 1px;
 	padding: 8px 16px;
 	margin: 24px 0px;
+}
+
+/* Module2 */
+.module2 > * {
+	height: 64px;
+	margin-right: 6px;
+}
+.module2 button {
+	width: 32px;
+	background-color: white;
+	border: 1px solid #dad8d9;
+	outline: none;
+}
+.module2 button:first-of-type {background-position: -55px 23px;}
+.module2 button:last-of-type {background-position: -55px -107px;}
+.module2 .price {
+	width: 110px;
+	height: calc(64px - 6px);
+	border: 1px solid #d6d4d7;
+	padding: 6px 12px 0 0;
+	text-align: center;
+}
+.module2 .price:first-of-type {
+	border-top: 3px solid #4388c9;
+}
+.module2 .price time {
+	display: block;
+	font-size: 14px;
+	padding-left: 2px;
+}
+.module2 .price span::before {
+	content: "￥";
+	color: #adadac;
+	font-size: 16px;
+}
+.module2 .price span {
+	color: #ec6500;
+	font-size: 21px;
 }

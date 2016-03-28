@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="zh">
+<html lang="zh" data-demo="true">
 <head>
 	<title>Task 9 of Starloop</title>
 	<link rel="stylesheet" href="./css/index.css" />
 	<meta charset="utf-8" />
 </head>
-<body>
+<body data-demo="true">
 	<header data-flex>
 		<div data-icon="logo"></div>
 		<div class="infobox" data-flex>
@@ -58,10 +58,18 @@
 			<div class="container"><div data-icon="star"></div><span>图库</span></div>
 			<div class="container"><div data-icon="star"></div><span>成长记录</span></div>
 			<div class="container"><div data-icon="accountant-info"></div><span>账户信息</span></div>
+			<div class="container"><div data-icon="star"></div><span id="change">切换屏幕大小</span></div>
 		</nav>
 	</aside>
 	<main>
 		<iframe src="frame.html" frameborder="0"></iframe>
 	</main>
+	<script>
+		let html = document.getElementsByTagName("html")[0]
+		document.getElementById('change').onclick = e => {
+			document.body.setAttribute('data-demo', document.body.getAttribute('data-demo') === "true" ? "false" : "true")
+			html.setAttribute('data-demo', html.getAttribute('data-demo') === "true" ? "false" : "true")
+		}
+	</script>
 </body>
 </html>
