@@ -182,3 +182,34 @@ article {
 }
 
 /* Module 4 */
+.module4 section {
+
+}
+.module4 section header div {
+	display: inline-block;
+	background: #ededf0;
+	color: #535354;
+	padding: 6px 20px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border: 1px solid #ededf0;
+}
+.module4 section header div.active {
+	padding-top: 8px;
+	background: white;
+	border-color: #d7d8d8;
+	border-bottom: none;
+	position: relative;
+	top: 2px;
+}
+.module4 main {
+	padding: 30px 40px;
+	border: 1px solid #d7d8d8;
+}
+.module4 main > div > div {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 1px solid #dfdfdf;
+}
+.module4 main > div + div > div {border-top: none;}
+.module4 main > div > div + div {border-left: none;}

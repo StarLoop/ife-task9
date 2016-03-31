@@ -1,7 +1,6 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	overflow: hidden;
 }
 html[data-demo=true], body[data-demo=true] {
 	height: 768px;
