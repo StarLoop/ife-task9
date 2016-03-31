@@ -10,6 +10,14 @@ body {
 body > header * {cursor: pointer;}
 body > header * {transition: 0.1s color text-shadow;}
 body > header *:hover {color: gray; text-shadow: 0 0 2px ghostwhite;}
+input[type=button], button {
+	background: #388ac1;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 1px;
+	padding: 8px 16px;
+}
 /* Header */
 body > header {
 	padding: 10px 30px;
@@ -56,15 +64,7 @@ article {
 .module1 .object select, .module1 .detail select {width: 120px;}
 .module1 .detail select.short {width: 70px;}
 .module1 .detail span.short {margin-right: 12px;}
-.module1 input[type=button] {
-	background: #388ac1;
-	color: white;
-	border: none;
-	outline: none;
-	border-radius: 1px;
-	padding: 8px 16px;
-	margin: 24px 0px;
-}
+.module1 input[type=button] {margin: 24px 0px;}
 
 /* Module2 */
 .module2 > * {
@@ -171,6 +171,8 @@ article {
 	box-shadow: 0px 0px 2px #cdcacd;
 	margin-top: 12px;
 	background: white;
+	margin-right: 10px;
+	float: left;
 }
 .card > header {
 	background: #f4f5f6;
@@ -182,9 +184,6 @@ article {
 }
 
 /* Module 4 */
-.module4 section {
-
-}
 .module4 section header div {
 	display: inline-block;
 	background: #ededf0;
@@ -213,3 +212,50 @@ article {
 }
 .module4 main > div + div > div {border-top: none;}
 .module4 main > div > div + div {border-left: none;}
+.module4 main .active {background: #f4f5f6;}
+
+/* Module 5 */
+.module5 {
+	width: 355px;
+	height: 372px;
+	margin-left: 0px;
+}
+.module5 main {padding: 1em 34px;}
+.module5 main header {
+	padding-bottom: 10px;
+	padding-left: 6px;
+	border-bottom: 1px solid #e9e8e8;
+}
+.module5 main .tip {
+	color: #c3c2c2;
+	margin: 6px 0;
+}
+
+.module5 main section {
+	border-bottom: 1px solid #e9e8e8;
+	padding: 6px;
+}
+.module5 main .manager {margin-left: 1em;}
+.module5 main .price {width: 100px; border-right: 1px solid #e9e8e8;}
+.module5 main .price span::before {content: "￥";}
+.module5 main .details {
+	padding-left: 6px;
+	height: calc(124px - 12px);
+}
+
+.module5 main footer {
+	border-top: 1px solid #e9e8e8;
+	padding-top: 6px;
+}
+.module5 main footer button {float: right;}
+.module5 main footer .checkbox {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAAArklEQVQokb3SMQ6CMBgF4FfD1JDigDveQj2NHM5ar4GJrGrChtIj4EiwVEtCAlgSO+gbOjT/16HvJ1mWaTiEMYaZC+jyG1TXNZLkCKXUd8gAIQSulzOqqvpETdNYwaMssY1jUEqHSL//j3OOU5page/7gwc9cxACrNYbHPY7qKeClMUkaOf7PeW3ewuDYD4JTE9kXG4hJRZhaAUd8saXyyiyDvfzv40gWmunhTV5ASS+Um7W71PFAAAAAElFTkSuQmCC);
+	background-size: 100%;
+	width: 1em;
+	height: 1em;
+	display: inline-block;
+}
+.module5 main footer label {
+	margin-top: -4px;
+	margin-left: 4px;
+}
