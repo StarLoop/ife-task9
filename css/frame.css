@@ -3,6 +3,7 @@ body {
 	font-family: 'Microsoft Yahei Light', sans-serif;
 	margin: 0;
 	background: #eeeeed;
+	font-weight: bold;
 }
 [data-icon] {background: url('../img/frame.png') no-repeat; display: inline-block;}
 [data-flex] {display: flex; align-items: center;}
@@ -17,6 +18,15 @@ input[type=button], button {
 	outline: none;
 	border-radius: 1px;
 	padding: 8px 16px;
+}
+select {
+	border-color: #dfdfdf;
+	padding: 6px;
+	font-size: 14px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	background: url('../img/frame.png') no-repeat right;	
 }
 /* Header */
 body > header {
@@ -49,15 +59,8 @@ article {
 	height: 84px;
 }
 .module1 select {
-	border-color: #dfdfdf;
 	margin: 6px 0 0;
-	padding: 6px;
-	font-size: 14px;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	background: url('../img/frame.png') no-repeat right;
 	background-position: 100px -102px;
-	outline: none;
 }
 .module1 div span {color: #aaa; margin: 0 16px;}
 .module1 .query select {width: 100px; background: url('../img/frame.png') no-repeat right; background-position: 80px -73px;}
@@ -184,6 +187,9 @@ article {
 }
 
 /* Module 4 */
+.module4 {
+    width: 520px;
+}
 .module4 section header div {
 	display: inline-block;
 	background: #ededf0;
@@ -216,7 +222,7 @@ article {
 
 /* Module 5 */
 .module5 {
-	width: 355px;
+	width: 435px;
 	height: 372px;
 	margin-left: 0px;
 }
@@ -258,4 +264,36 @@ article {
 .module5 main footer label {
 	margin-top: -4px;
 	margin-left: 4px;
+}
+
+/* Module 6 */
+.module6 {
+	clear: both;
+	width: 375px;
+}
+.module6 select {width: 85px; background-position: 65px -72px;}
+.module6 select.mo {width: 60px; background-position: 40px -72px;}
+.module6 button {
+	background: white;
+	color: black;
+	border: 1px solid #cbcccc;
+	padding: 7px 8px;
+}
+.module6 table {
+	table-layout:fixed;
+	margin: 10px 20px;
+	text-align: center;
+	border-collapse: collapse;
+}
+.module6 thead tr {border-top: 1px solid #b2cfed; border-bottom: 1px solid #e3e3e4;}
+.module6 thead td {width: 45px;	height: 30px;}
+.module6 tbody td {width: 45px;	padding: 10px 0;}
+.module6 tbody .holiday {color: red;}
+.module6 tbody td:nth-last-child(2), .module6 tbody td:last-child {color: red;}
+.module6 tbody td:nth-last-child(2) div, .module6 tbody td:last-child div {color: black;}
+
+/* Module 7 */
+.module7 {
+	width: 575px;
+	margin-left: 0px;
 }

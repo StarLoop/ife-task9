@@ -8,7 +8,7 @@ html[data-demo=true], body[data-demo=true] {
 	box-shadow: 0px 0px 12px gray;
 	margin: auto;
 	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;  
+	top: 0em; left: 0; bottom: 0; right: 0;  
 }
 @media screen and (max-height: 768px) {
 	html[data-demo=true], body[data-demo=true] {
@@ -59,7 +59,6 @@ header .infobox .searchbox input {
 	border: none;
 	margin-left: 38px;
 	position: relative;
-	top: -2px; /* but why? */
 }
 /* header > info > user */
 header .infobox .user {
