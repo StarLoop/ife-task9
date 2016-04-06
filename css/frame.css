@@ -295,6 +295,7 @@ article {
 /* Module 7 */
 .module7 {width: 575px; margin-left: 0px;}
 .module7 table td {border: 1px solid #ddd; padding: 6px 0;}
+.module7 table tr:hover {background: #f4f5f6;}
 .module7 table td:first-child {width: 70px;}
 .module7 table td:nth-last-child(2) {width: 90px;}
 .module7 table tbody td:last-child {width: 300px; text-align: right;}
